@@ -29,9 +29,9 @@ char *dectobin_v2(unsigned int val){
 
     while(val>0){
         if(val%2 == 0){
-            tobin+=0;
+            tobin+='0';
         }else{
-            tobin+=1;
+            tobin+='1';
         }
         val = val / 2; 
         i++;
