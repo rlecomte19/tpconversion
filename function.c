@@ -24,14 +24,22 @@ int bintodec(char *val){
 
 char *dectobin_v2(unsigned int val){
     char *tobin = malloc(100);
-    int remains;
     int i=0;
 
     while(val>0){
+        printf("DEBUT BOUCLE ENTIER : %d\n", val);
         if(val%2 == 0){
             tobin+='0';
+            printf("#### CONDITION 0 ####\n");
+            printf("entier : %d \n", val);
+            printf("reste : %d \n", val%2);
+            printf("tableau indice %d : %c", i,tobin[i]);
         }else{
             tobin+='1';
+            printf("#### CONDITION 0 ####");
+            printf("entier : %d \n", val);
+            printf("reste : %d \n", val%2);
+            printf("tableau indice %d : %c", i,tobin[i]);
         }
         val = val / 2; 
         i++;
