@@ -22,6 +22,43 @@ int bintodec(char *val){
     return dec;
 }
 
+int hexatodec(char *val){
+    int valsym=0;
+    int result=0;
+    int powcalc=1;
+    for(int i=0; i<sizeof(val);i++){
+        int base=1;
+        switch(val[i]){
+                case 'A':
+                    valSym = 10;
+                break;
+                case 'B':
+                    valSym = 11;
+                break;
+                case 'C':
+                    valSym = 12;
+                break;
+                case 'D':
+                    valSym = 13;
+                break;
+                case 'E':
+                    valSym = 14;
+                break;
+                case 'F':
+                    valSym = 15;
+                break;
+                default:
+                    valSym = val[i];
+                break;
+        }
+        for(j=0;j<=i;j++){
+            base*=16;
+        }
+        result+=valsym * base;
+    }
+    
+}
+
 char *dectobin_v2(unsigned int val){
     char *tobin = malloc(100);
     int i=0;

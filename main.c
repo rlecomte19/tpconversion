@@ -13,19 +13,26 @@ char *dectohexa_v2(unsigned int val);
 #pragma endregion
 
 int main(int argc, char *argv[]){
+    // ######## BINTODEC(VAL) ######## 
     // char val[8] =  { 1,0,1,0,1,1,0,1 };
     // int valsize = sizeof(val);
 
     // int decimal = bintodec(val);
-
-    char *tobin = dectobin_v2(205);
-
     // printf("Binaire converti 'dectobin' : %d", decimal);
-    printf("Decimal converti 'bintodecv2 : ");
-    for(int i=(sizeof(tobin)-1); i>=0;i--){
-        printf("%c", tobin[i]);
-    }
-    printf("\n");
+    
+
+    // ######## BINTODEC(VAL) ######## 
+    // char *tobin = dectobin_v2(205);
+    // printf("Decimal converti 'bintodecv2 : ");
+    // for(int i=(sizeof(tobin)-1); i>=0;i--){
+    //     printf("%c", tobin[i]);
+    // }
+    // printf("\n");
+
+    char *hexa = { 'A', 5 }  
+    int hextodec = hexatodec(hexa);
+
+    printf("Decimal converti de l'hexa : %d", hextodec);
 }
 
  
