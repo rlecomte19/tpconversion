@@ -33,13 +33,13 @@ char *dectobin_v2(unsigned int val){
             printf("#### CONDITION 0 ####\n");
             printf("entier : %d \n", val);
             printf("reste : %d \n", val%2);
-            printf("tableau indice %d : %d", i,tobin[i]);
+            printf("tableau indice %d : %c", i,tobin[i]);
         }else{
             tobin[i]='1';
             printf("#### CONDITION 0 ####");
             printf("entier : %d \n", val);
             printf("reste : %d \n", val%2);
-            printf("tableau indice %d : %d", i,tobin[i]);
+            printf("tableau indice %d : %c", i,tobin[i]);
         }
         val = val / 2; 
         i++;
