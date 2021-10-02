@@ -18,6 +18,6 @@ int bintodec(char *val){
         printf("\nValeur a ce moment : %d ", val[i]);
         printf("\nDecimal a ce moment : %d", dec);
         printf("\n##########\n");
-    }
+    } 
     return dec;
 }
