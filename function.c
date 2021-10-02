@@ -1,3 +1,7 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "function.c"
+
 int bintodec(char *val){
     int index = strlen(val) - 1;
     int dec = val[index];
