@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "function.c"
+#include <string.h>
 
 #pragma region
 int bintodec(char *val);
