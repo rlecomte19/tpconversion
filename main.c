@@ -24,7 +24,7 @@ int main(int argc, char *argv[]){
 
     // ######## dectobinv2(val) ######## 
     char *tobin = dectobin_v2(205);
-    printf("\Binaire converti du decimal'dectobinv2 : ");
+    printf("\nBinaire converti du decimal'dectobinv2 : ");
     for(int i=(sizeof(tobin)-1); i>=0;i--){
         printf("%c", tobin[i]);
     }
