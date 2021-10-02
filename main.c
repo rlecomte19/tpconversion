@@ -15,7 +15,7 @@ char *dectohexa_v2(unsigned int val);
 
 int main(int argc, char *argv[]){
     // ######## bintodec(va;) ######## 
-    char val[8] =  { '0','1','0','1','1','0','1' };
+    char *val = "0101101";
     int valsize = sizeof(val);
 
     int decimal = bintodec(val);
