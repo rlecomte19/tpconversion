@@ -30,7 +30,6 @@ int hexatodec(char *val){
     int valsize = strlen(val);
     
     for(int i=valsize-1; i>=0;i--){
-        int base=1; 
         switch(val[i]){
                 case 'A':
                     valSym = 10;
