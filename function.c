@@ -28,8 +28,8 @@ int hexatodec(char *val){
     int powcalc=1;
     int valSym = 0;
     int valsize = strlen(val);
-
-    for(int i=0; i<valsize;i++){
+    
+    for(int i=valsize-1; i>=0;i--){
         int base=1; 
         switch(val[i]){
                 case 'A':
