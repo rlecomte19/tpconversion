@@ -51,11 +51,13 @@ int hexatodec(char *val){
                     valSym = val[i];
                 break;
         }
-        for(j=0;j<=i;j++){
+        for(int j=0;j<=i;j++){
             base*=16;
         }
         result+=valsym * base;
     }
+
+    return result;
     
 }
 

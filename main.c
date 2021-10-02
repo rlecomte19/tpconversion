@@ -30,9 +30,9 @@ int main(int argc, char *argv[]){
     // printf("\n");
 
     char *hexa = { 'A', 5 }  
-    int hextodec = hexatodec(hexa);
+    int decfromhexa = hexatodec(hexa);
 
-    printf("Decimal converti de l'hexa : %d", hextodec); 
+    printf("Decimal converti de l'hexa : %d", decfromhexa); 
 }
 
  
