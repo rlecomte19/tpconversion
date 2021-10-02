@@ -32,8 +32,7 @@ int main(int argc, char *argv[]){
 
 
     // ######## hexatodec(val) ######## 
-    char *hexa = malloc(100);
-    hexa+="A5";
+    char *hexa = "A5";
     int decfromhexa;
     decfromhexa = hexatodec(hexa);
 
