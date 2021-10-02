@@ -13,7 +13,7 @@ char *dectohexa_v2(unsigned int val);
 #pragma endregion
 
 int main(int argc, char *argv[]){
-    ######## BINTODEC(VAL) ######## 
+    // ######## BINTODEC(VAL) ######## 
     char val[8] =  { 1,0,1,0,1,1,0,1 };
     int valsize = sizeof(val);
 
