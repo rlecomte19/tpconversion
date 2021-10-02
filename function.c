@@ -1,5 +1,5 @@
 int bintodec(char *val){
-    int index = sizeof(val) - 1;
+    int index = strlen(val) - 1;
     int dec = val[index];
 
     for(int i=index-1;i>=0;i--){
@@ -30,7 +30,7 @@ int hexatodec(char *val){
     int valsize = strlen(val);
 
     printf("\nTAILLE TABLEAU IMPORTANT : %d\n", valsize);
-    for(int i=0; i<valsize;i++){
+    for(int i=valsize; i>=0;i--){
         int base=1; 
         switch(val[i]){
                 case 'A':
@@ -52,11 +52,11 @@ int hexatodec(char *val){
                     valSym = 15;
                 break;
                 default:
-                    // ASCII 5 = 53 decimal et ASCII 0 = 48 decimal => on en fait la soustraction pour bien retomber sur le 5 en tant qu'int 
+                    // ASCII 5 = 53 decimal et ASCII 0 = 48 decimal => on en fait la soustraction pour bien retomber sur le 5 en tant qu'entier
                     valSym = val[i] - '0';
                 break;
         }
-        for(int j=0;j<=i;j++){
+        for(int j=0;j>=i;j++){
             base*=16;
         }
         printf("\nValeur symbole : %d", valSym);
