@@ -1,13 +1,11 @@
+#include <string.h>
 int bintodec(char *val){
     int result=0,valSym=0,base=1;
     int valsize = strlen(val);
 
     for(int i=valsize-1; i>=0;i--){
         valSym = val[i] - '0';
-        printf("Valeur tableau pour indice %d : %c", i, val[i]);
-        printf("Base actuelle : %d", base);
         result += valSym * base;
-        printf("Resultat actuel : %d", result);
         base *= 2;
     }
 
