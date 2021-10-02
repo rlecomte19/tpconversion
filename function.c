@@ -56,7 +56,7 @@ int hexatodec(char *val){
                     valSym = val[i] - '0';
                 break;
         }
-        for(int j=0;j>=i;j++){
+        for(int j=0;j>=i;j--){
             base*=16;
         }
         printf("\nValeur symbole : %d", valSym);
