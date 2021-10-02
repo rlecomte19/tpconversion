@@ -4,7 +4,10 @@ int bintodec(char *val){
 
     for(int i=valsize-1; i>=0;i--){
 
+        printf("Valeur tableau pour indice %d : %c", i, val[i]);
+        printf("Base actuelle : %d", base);
         result += (val[i] * base);
+        printf("Resultat actuel : %d", result);
         base *= 2;
     }
 
