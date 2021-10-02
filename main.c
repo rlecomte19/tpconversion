@@ -33,7 +33,7 @@ int main(int argc, char *argv[]){
     int decfromhexa;
     decfromhexa = hexatodec(hexa);
 
-    printf("Decimal converti de l'hexa : %d", decfromhexa); 
+    printf("Decimal converti de l'hexa : %d \n", decfromhexa); 
 }
 
  
