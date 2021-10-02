@@ -29,7 +29,7 @@ int main(int argc, char *argv[]){
     // }
     // printf("\n");
 
-    char *hexa = { 'A', '5' };
+    char hexa[] = { 'A', '5' };
     int decfromhexa;
     decfromhexa = hexatodec(hexa);
 
