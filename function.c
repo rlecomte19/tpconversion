@@ -57,8 +57,8 @@ int hexatodec(char *val){
         }
         printf("\nValeur symbole : %d", valSym);
         printf("\nValeur base : %d", base);
-        printf("\nValeur decimale : %d", result);
         result += (valSym * base);
+        printf("\nValeur decimale : %d", result);
     }
 
     return result;
