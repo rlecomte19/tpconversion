@@ -35,5 +35,5 @@ char *dectobin_v2(unsigned int val){
         }
         i++;
     }
-    return tobin;
+    return *tobin;
 }
