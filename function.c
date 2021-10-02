@@ -29,8 +29,7 @@ int hexatodec(char *val){
     int valSym = 0;
     int valsize = strlen(val);
 
-    printf("\nTAILLE TABLEAU IMPORTANT : %d\n", valsize);
-    for(int i=valsize; i>=0;i--){
+    for(int i=0; i<valsize;i++){
         int base=1; 
         switch(val[i]){
                 case 'A':
