@@ -14,33 +14,33 @@ char *dectohexa_v2(unsigned int val);
 #pragma endregion
 
 int main(int argc, char *argv[]){
-    // ######## BINTODEC(VAL) ######## 
-    // char val[8] =  { '1','0','1','0','1','1','0','1' };
-    // int valsize = sizeof(val);
+    // ######## bintodec(va;) ######## 
+    char val[8] =  { '1','0','1','0','1','1','0','1' };
+    int valsize = sizeof(val);
 
-    // int decimal = bintodec(val);
-    // printf("Binaire converti 'dectobin' : %d", decimal);
+    int decimal = bintodec(val);
+    printf("\nBinaire converti 'bintodec' : %d\n", decimal);
     
 
-    // ######## DECTOBIN(VAL) ######## 
-    // char *tobin = dectobin_v2(205);
-    // printf("Decimal converti 'bintodecv2 : ");
-    // for(int i=(sizeof(tobin)-1); i>=0;i--){
-    //     printf("%c", tobin[i]);
-    // }
-    // printf("\n");
+    // ######## dectobinv2(VAL) ######## 
+    char *tobin = dectobin_v2(205);
+    printf("\nDecimal converti 'dectobinv2 : ");
+    for(int i=(sizeof(tobin)-1); i>=0;i--){
+        printf("%c", tobin[i]);
+    }
+    printf("\n");
 
 
-    // ######## HEXATODEC(VAL) ######## 
-    // char hexa[2];
-    // hexa[0] = 'A'; 
-    // hexa[1] = '5';
-    // int decfromhexa;
-    // decfromhexa = hexatodec(hexa);
+    // ######## hexatodec(val) ######## 
+    char hexa[2];
+    hexa[0] = 'A'; 
+    hexa[1] = '5';
+    int decfromhexa;
+    decfromhexa = hexatodec(hexa);
 
-    // printf("\nDecimal converti de l'hexa : %d \n", decfromhexa);
+    printf("\nDecimal converti de l'hexa : %d \n", decfromhexa);
 
-    // ######## DECTOHEXA(VAL) ######## 
+    // ######## dectohexa(val) ######## 
     char *tohexa = dectohexa(2514);
     printf("Decimal converti 'dectohexa' : ");
     for(int i=(strlen(tohexa)-1); i>=0;i--){
