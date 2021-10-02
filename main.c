@@ -25,7 +25,7 @@ int main(int argc, char *argv[]){
     for(int i=0; i<sizeof(tobin); i++){
         printf("%d", tobin[i]);
     }
-    printf('\n');
+    printf("\n");
 }
 
  

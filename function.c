@@ -25,13 +25,15 @@ int bintodec(char *val){
 char *dectobin_v2(unsigned int val){
     char tobin[100];
     int remains;
+    int i=0;
 
     while(val>0){
         if(val%2 == 0){
-            tobin+='0';
+            tobin[i]='0';
         }else{
-            tobin+='1';
+            tobin[i]='1';
         }
+        i++;
     }
     return tobin;
 }
