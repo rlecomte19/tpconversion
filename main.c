@@ -24,7 +24,7 @@ int main(int argc, char *argv[]){
 
     // ######## dectobinv2(val) ######## 
     char *tobin = dectobin_v2(205);
-    printf("\nDecimal converti 'dectobinv2 : ");
+    printf("\Binaire converti du decimal'dectobinv2 : ");
     for(int i=(sizeof(tobin)-1); i>=0;i--){
         printf("%c", tobin[i]);
     }
@@ -32,9 +32,8 @@ int main(int argc, char *argv[]){
 
 
     // ######## hexatodec(val) ######## 
-    char hexa[2];
-    hexa[0] = 'A'; 
-    hexa[1] = '5';
+    char *hexa = malloc(100);
+    hexa+="A5";
     int decfromhexa;
     decfromhexa = hexatodec(hexa);
 

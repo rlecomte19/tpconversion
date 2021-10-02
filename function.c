@@ -14,10 +14,10 @@ int bintodec(char *val){
 
 int hexatodec(char *val){
     int result=0,valSym=0,base=1;
-    int vallen = strlen(val);
-    printf("TAILLE TABLEAU\n : %d", vallen);
+    int valsize = strlen(val);
+    printf("TAILLE TABLEAU\n : %d", valsize);
 
-    for(int i=vallen-1; i>=0;i--){
+    for(int i=valsize-1; i>=0;i--){
         switch(val[i]){
                 case 'A':
                     valSym = 10;
