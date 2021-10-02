@@ -51,6 +51,7 @@ int hexatodec(char *val){
 
 char *dectobin_v2(unsigned int val){
     char *tobin = malloc(100);
+    
     int i=0;
 
     while(val>0){
@@ -64,4 +65,31 @@ char *dectobin_v2(unsigned int val){
     }
     tobin+='\0';
     return tobin;
+}
+
+char *dectohexa(unsigned int val)
+{
+    
+    char *tohexa = malloc(100);
+ 
+    int i=0;
+
+    while (val != 0) {
+        
+        int remains=0;
+        remains = val%16;
+
+        if (val%16 < 10) {
+            tohexa[i] = remains + '0';
+            i++;
+        }
+        else {
+            tohexa[i] = remains + 55;
+            i++;
+        }
+ 
+        val /= 16;
+    }
+
+    return tohexa;
 }
