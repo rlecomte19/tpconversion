@@ -23,7 +23,7 @@ int bintodec(char *val){
 }
 
 char *dectobin_v2(unsigned int val){
-    char tobin[100];
+    char *tobin = malloc(100);
     int remains;
     int i=0;
 
@@ -35,5 +35,5 @@ char *dectobin_v2(unsigned int val){
         }
         i++;
     }
-    return *tobin;
+    return tobin;
 }
