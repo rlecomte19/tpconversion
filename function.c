@@ -15,6 +15,7 @@ int bintodec(char *val){
 int hexatodec(char *val){
     int result=0,valSym=0,base=1;
     int valsize = strlen(val);
+    printf("TAILLE TABLEAU\n : %d", valsize);
 
     for(int i=valsize-1; i>=0;i--){
         switch(val[i]){

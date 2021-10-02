@@ -15,14 +15,14 @@ char *dectohexa_v2(unsigned int val);
 
 int main(int argc, char *argv[]){
     // ######## bintodec(va;) ######## 
-    char val[8] =  { '1','0','1','0','1','1','0','1' };
+    char val[8] =  { '0','1','0','1','1','0','1' };
     int valsize = sizeof(val);
 
     int decimal = bintodec(val);
     printf("\nBinaire converti 'bintodec' : %d\n", decimal);
     
 
-    // ######## dectobinv2(VAL) ######## 
+    // ######## dectobinv2(val) ######## 
     char *tobin = dectobin_v2(205);
     printf("\nDecimal converti 'dectobinv2 : ");
     for(int i=(sizeof(tobin)-1); i>=0;i--){
@@ -42,7 +42,7 @@ int main(int argc, char *argv[]){
 
     // ######## dectohexa(val) ######## 
     char *tohexa = dectohexa(2514);
-    printf("Decimal converti 'dectohexa' : ");
+    printf("\nHexadecimal converti du decimal 'dectohexa' : ");
     for(int i=(strlen(tohexa)-1); i>=0;i--){
         printf("%c", tohexa[i]);
     }
