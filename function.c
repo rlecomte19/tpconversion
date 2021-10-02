@@ -3,10 +3,10 @@ int bintodec(char *val){
     int valsize = strlen(val);
 
     for(int i=valsize-1; i>=0;i--){
-
+        valSym = val[i] - '0';
         printf("Valeur tableau pour indice %d : %c", i, val[i]);
         printf("Base actuelle : %d", base);
-        result += (val[i] * base);
+        result += valSym * base;
         printf("Resultat actuel : %d", result);
         base *= 2;
     }
