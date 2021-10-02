@@ -26,6 +26,7 @@ int hexatodec(char *val){
     int valsym=0;
     int result=0;
     int powcalc=1;
+    int valSym = 0;
     for(int i=0; i<sizeof(val);i++){
         int base=1; 
         switch(val[i]){

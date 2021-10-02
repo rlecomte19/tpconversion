@@ -29,8 +29,9 @@ int main(int argc, char *argv[]){
     // }
     // printf("\n");
 
-    char *hexa = { 'A', 5 }  
-    int decfromhexa = hexatodec(hexa);
+    char *hexa = { A, 5 };
+    int decfromhexa;
+    decfromhexa = hexatodec(hexa);
 
     printf("Decimal converti de l'hexa : %d", decfromhexa); 
 }
