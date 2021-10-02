@@ -41,7 +41,7 @@ int main(int argc, char *argv[]){
     // printf("\nDecimal converti de l'hexa : %d \n", decfromhexa);
 
     // ######## DECTOHEXA(VAL) ######## 
-    char *tohexa = dectohexa(10);
+    char *tohexa = dectohexa(2514);
     printf("Decimal converti 'dectohexa' : ");
     for(int i=(strlen(tohexa)-1); i>=0;i--){
         printf("%c", tohexa[i]);
