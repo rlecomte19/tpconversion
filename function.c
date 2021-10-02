@@ -1,35 +1,20 @@
 int bintodec(char *val){
-    int index = strlen(val) - 1;
-    int dec = val[index];
+    int result=0,valSym=0,base=1;
+    int valsize = strlen(val);
 
-    for(int i=index-1;i>=0;i--){
-        int base = 1;
-        int j=index;
+    for(int i=valsize-1; i>=0;i--){
 
-        do{
-            base *= 2;
-            j--;
-        }while(j>i);
-       
-        dec += val[i] * base;
-        int test = val[i] * base;
-        printf("\nBase a ce moment : %d",base);
-        printf("\nCalcul a ce moment : %d",test);
-        printf("\nValeur a ce moment : %d ", val[i]);
-        printf("\nDecimal a ce moment : %d", dec);
-        printf("\n##########\n");
-    } 
-    return dec;
+        result += (val[i] * base);
+        base *= 2;
+    }
+
+    return result;
 }
 
 int hexatodec(char *val){
-    int valsym=0;
-    int result=0;
-    int powcalc=1;
-    int valSym = 0;
+    int result=0,valSym=0,base=1;
     int valsize = strlen(val);
-    int base=1;
-    
+
     for(int i=valsize-1; i>=0;i--){
         switch(val[i]){
                 case 'A':
@@ -55,11 +40,8 @@ int hexatodec(char *val){
                     valSym = val[i] - '0';
                 break;
         }
-        printf("\nValeur symbole : %d", valSym);
-        printf("\nValeur base : %d", base);
         result += (valSym * base);
         base *= 16;
-        printf("\nValeur decimale : %d", result);
     }
 
     return result;
