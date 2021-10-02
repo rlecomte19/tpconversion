@@ -33,6 +33,7 @@ char *dectobin_v2(unsigned int val){
         }else{
             tobin+='1';
         }
+        (int) val /= 2; 
         i++;
     }
     return tobin;
