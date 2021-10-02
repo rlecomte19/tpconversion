@@ -27,6 +27,7 @@ int hexatodec(char *val){
     int result=0;
     int powcalc=1;
     int valSym = 0;
+    printf("\nTAILLE TABLEAU IMPORTANT : %d\n", sizeof(val));
     for(int i=0; i<sizeof(val);i++){
         int base=1; 
         switch(val[i]){
@@ -49,6 +50,7 @@ int hexatodec(char *val){
                     valSym = 15;
                 break;
                 default:
+                    // ASCII 5 = 53 decimal et ASCII 0 = 48 decimal => on en fait la soustraction pour bien retomber sur le 5 en tant qu'int 
                     valSym = val[i] - '0';
                 break;
         }
