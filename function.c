@@ -27,7 +27,7 @@ int hexatodec(char *val){
     int result=0;
     int powcalc=1;
     int valSym = 0;
-    int valsize = sizeof(val) / sizeof(char);
+    size_t valsize = sizeof(val) / sizeof(char);
     printf("\nTAILLE TABLEAU IMPORTANT : %d\n", valsize);
     for(int i=0; i<sizeof(val);i++){
         int base=1; 
