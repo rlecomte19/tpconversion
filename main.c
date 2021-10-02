@@ -18,7 +18,14 @@ int main(int argc, char *argv[]){
 
     int decimal = bintodec(val);
 
-    printf("Décimal converti : %d", decimal);
+    char *tobin = dectobin_v2(205);
+
+    printf("Binaire converti 'dectobin' : %d", decimal);
+    printf("Decimal converti 'bintodecv2 : ");
+    for(int i=0; i<sizeof(tobin); i++){
+        printf("%d", tobin[i]);
+    }
+    printf('\n');
 }
 
  
