@@ -104,7 +104,7 @@ char *dectobin_v3(unsigned int val){
         else{
             tobin[i] += '1';
         }
-        int wised >>= 1;
+        int wised = wised >> 1;
     }
     return tobin;
 }
