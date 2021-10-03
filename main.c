@@ -45,6 +45,10 @@ int main(int argc, char *argv[]){
         printf("%c", tohexa[i]);
     }
     printf("\n");
+
+    char *tobinv3 = dectobin_v3(205);
+    printf("Binaire converti par decimal (dectobinv3) : %s", tobinv3);
+    
 }
 
  
