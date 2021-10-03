@@ -99,8 +99,9 @@ char *dectobin_v3(unsigned int val){
     int wised = 32768;
 
     for (int i = 32; i > 0; i--) {
-        if ((wised & val) == 0)
+        if ((val & wised) == 0){
             tobin[i] = '0';
+        }
         else{
             tobin[i] = '1';
         }
