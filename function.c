@@ -98,7 +98,7 @@ char *dectobin_v3(unsigned int val){
     char *tobin = malloc(100);
     int wised = 32768;
 
-    for (int i = (sizeof(unsigned int)*8); i > 0; i--) {
+    for (int i = 32; i > 0; i--) {
         if ((wised & val) == 0)
             tobin[i] += '0';
         else{
