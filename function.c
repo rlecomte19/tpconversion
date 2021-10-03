@@ -95,9 +95,9 @@ char *dectohexa(unsigned int val)
 }
 
 char *dectobin_v3(unsigned int val){
-    char *tobin = maloc(100);
+    char *tobin = malloc(100);
 
-    printf("%d", sizeof(unsigned int));
+    printf("%ld", sizeof(unsigned int));
 
     for (int i = 31; i >= 0; i--) {
         int wised = val >> i;
