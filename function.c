@@ -1,4 +1,5 @@
 #include <string.h>
+
 int bintodec(char *val){
     int result=0,valSym=0,base=1;
     int valsize = strlen(val);
@@ -67,6 +68,37 @@ char *dectobin_v2(unsigned int val){
     return tobin;
 }
 
+char *dectobin_v1(unsigned int val){
+    char *tobin = malloc(100);
+    int power = 1;
+    int nbPower = 0;
+
+    while(power <= val){
+        power*=2;
+        nbPower++;
+    }
+    power/=2;
+
+    int powerList[nbPower-1];
+    size_t len = sizeof(powerList)/sizeof(int);
+
+    for(int i=0;i<=nbPower; i++){
+        powerList[i] = power;
+        power/=2;
+    }
+
+    for(int j=0; j<=len;j++){
+        printf("Valeur val : %d \n Valeur power : %d \n", val, powerList[j]);
+        if(val < powerList[j]){
+            tobin[j] = '0';
+        }else{
+            tobin[j] = '1';
+            val -= powerList[j];
+        }
+    }
+
+    return tobin;
+}
 char *dectohexa(unsigned int val)
 {
     
@@ -108,4 +140,17 @@ char *dectobin_v3(unsigned int val){
         wised = wised >> 1;
     }
     return tobin;
+}
+
+char *dectohexa_v2(unsigned int val){
+    char *nbr_hexa = malloc(100);
+    unsigned char mask = 0XF;
+    char regex[100] = "0123456789ABCDEF";
+
+    for(int i=0; val > 0; i++){
+        nbr_hexa[i--] = regex[(val & mask)];
+        val >>= 4;
+        i++;
+    }
+    return nbr_hexa;
 }
