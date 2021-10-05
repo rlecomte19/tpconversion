@@ -52,6 +52,9 @@ int main(int argc, char *argv[]){
     for (int i=0; i<strlen(tobinv3);i++){
         printf("%c", tobinv3[i]);
     }
+    
+    char *dectobinv1 = dectobin_v1(300);
+    printf("Binaire converti du decimal (dectobinv1) : %s", dectobinv1);
 
 }
 
