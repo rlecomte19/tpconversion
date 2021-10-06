@@ -143,14 +143,14 @@ char *dectobin_v3(unsigned int val){
 }
 
 char *dectohexa_v2(unsigned int val){
-    char *nbr_hexa = malloc(100);
+    char *tohexa = malloc(100);
     unsigned char mask = 0XF;
     char regex[100] = "0123456789ABCDEF";
 
     for(int i=0; val > 0; i++){
-        nbr_hexa[i--] = regex[(val & mask)];
+        tohexa[i--] = regex[(val & mask)];
         val >>= 4;
         i++;
     }
-    return nbr_hexa;
+    return tohexa;
 }
